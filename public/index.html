@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ja">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.dom.min.js"></script>
   <script src="js/sketch.js"></script>
 
   <title>esora battle</title>
-  
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      background-color: #1b1b1b;
-    }
-  </style>
+
 </head>
 
 <body>
-  <main>
-  </main>
+  <!-- ランキングページへのボタン -->
+  <button class="ranking-button" onclick="window.location.href='ranking.html'">🏆 ランキング</button>
+
+  <div class="container">
+    <h1>Esora Battle</h1>
+    <p class="subheading">自分だけのキャラクターで対戦しよう！</p>
+
+    <div class="section">
+      <h2>ゲームを始める</h2>
+      <p>対戦を開始します</p>
+      <button class="start-button" onclick="window.location.href='battle.html'">⚔️ 対戦する</button>
+    </div>
+
+    <div class="options">
+      <div class="option">
+        <h3>キャラクター管理</h3>
+        <p>自分だけのキャラクターを作成・編集</p>
+        <button class="option-button" onclick="window.location.href='characters_management.html'">👤 キャラクター管理へ</button>
+      </div>
+      <div class="option">
+        <h3>ゲーム説明</h3>
+        <p>ルールと遊び方を確認</p>
+        <button class="option-button" onclick="window.location.href='help.html'">ℹ️ 遊び方を見る</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
